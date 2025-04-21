@@ -1,5 +1,19 @@
 # @dnd-kit/dom
 
+## 0.1.2
+
+### Patch Changes
+
+- [#1658](https://github.com/clauderic/dnd-kit/pull/1658) [`4682570`](https://github.com/clauderic/dnd-kit/commit/4682570a6b80868af0e51b1bbbf902430117df43) Thanks [@github-actions](https://github.com/apps/github-actions)! - Fix handling of aborted drag operations across sensors. The `start` method now returns a boolean to indicate whether the operation was aborted, allowing sensors to properly clean up when a drag operation is prevented. This affects the Keyboard and Pointer sensors, ensuring they properly handle cases where `beforeDragStart` events are prevented.
+
+- [#1658](https://github.com/clauderic/dnd-kit/pull/1658) [`f8d69b0`](https://github.com/clauderic/dnd-kit/commit/f8d69b01f4cf53fc368ef1fca9188c313192928d) Thanks [@github-actions](https://github.com/apps/github-actions)! - Allow `actions.start()` to optionally receive a `source` as input.
+
+- Updated dependencies [[`4682570`](https://github.com/clauderic/dnd-kit/commit/4682570a6b80868af0e51b1bbbf902430117df43), [`f8d69b0`](https://github.com/clauderic/dnd-kit/commit/f8d69b01f4cf53fc368ef1fca9188c313192928d), [`d04e9a2`](https://github.com/clauderic/dnd-kit/commit/d04e9a2879fb00f092c3f8280c8081a48eebf193)]:
+  - @dnd-kit/abstract@0.1.2
+  - @dnd-kit/collision@0.1.2
+  - @dnd-kit/geometry@0.1.2
+  - @dnd-kit/state@0.1.2
+
 ## 0.1.1
 
 ### Patch Changes
